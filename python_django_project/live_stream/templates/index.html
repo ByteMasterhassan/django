@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Stream</title>
+</head>
+<body>
+    <h1>Live Video Stream</h1>
+    <button id="stopStream">Stop Stream</button>
+    <div id="videoContainer">
+        <img id="videoStream" src="" alt="Video Stream">
+    </div>
+
+    <script>
+        var videoStream = document.getElementById("videoStream");
+        var stopStreamBtn = document.getElementById("stopStream");
+
+        stopStreamBtn.addEventListener("click", function () {
+            videoStream.src = ""; // Stop the video stream
+        });
+    </script>
+</body>
+</html>
